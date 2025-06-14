@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Réservation</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <h1>Formulaire de Réservation</h1>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="patrimoine.html">Patrimoine</a>
+        <a href="Reservation d'hotel.html">Réservation d'hotel</a>
+        <a href="galerie.html">Galerie</a>
+    </nav>
+</header>
+<main>
+    <form action="php/traitement.php" method="POST">
+        <input type="text" name="nom" placeholder="Votre nom" required>
+	<input type="text" name="prenom" placeholder="Votre Prénom" required>
+        <input type="email" name="email" placeholder="Votre email" required>
+        <input type="date" name="arrivee" 
+placeholder="Jour d'arrivé" required>
+        <input type="date" name="depart" 
+placeholder="Jour de depart" required>
+        <input type="number" name="personnes" placeholder="Nombre de personnes" min="1" required>
+        <textarea name="message" placeholder="Message ou demande spéciale"></textarea>
+        <input type="submit" value="Réserver">
+    </form>
+</main>
+</body>
+</html>
